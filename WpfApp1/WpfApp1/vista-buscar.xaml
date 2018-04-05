@@ -1,0 +1,44 @@
+﻿<Window x:Class="WpfApp1.vista_buscar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="vista_buscar" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="27*"/>
+            <RowDefinition Height="113*"/>
+        </Grid.RowDefinitions>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="420" Stroke="Black" VerticalAlignment="Top" Width="264" Grid.RowSpan="2"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="264,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="528" Grid.RowSpan="2"/>
+        <Label x:Name="l_rut" Content="RUT" HorizontalAlignment="Left" Margin="416,40,0,0" VerticalAlignment="Top" Width="59" Height="23"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="480,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btn_buscarRut" Content="" HorizontalAlignment="Left" Margin="678,40,0,0" VerticalAlignment="Top" Width="21" Height="23">
+            <Button.Background>
+                <ImageBrush ImageSource="RECURSOS/buscar-simbolo-circular.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="320" Margin="264,19,0,0" Stroke="Black" VerticalAlignment="Top" Width="528" Grid.Row="1"/>
+        <Label x:Name="l_fecha_nac" Content="" HorizontalAlignment="Left" Margin="318,89,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <Label Content="NOMBRE" HorizontalAlignment="Left" Margin="297,50,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="416,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="351" Grid.Row="1"/>
+        <Label Content="FECHA NACIMIENTO" HorizontalAlignment="Left" Margin="297,129,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <DatePicker HorizontalAlignment="Left" Margin="418,131,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <Label Content="CARGO" HorizontalAlignment="Left" Margin="297,88,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <ComboBox HorizontalAlignment="Left" Margin="418,89,0,0" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
+        <Label Content="VOTO" HorizontalAlignment="Left" Margin="297,195,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <RadioButton Content="REMODELACION CASINO" HorizontalAlignment="Left" Margin="382,200,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked" Grid.Row="1"/>
+        <RadioButton Content="PAUSA ACTIVA" HorizontalAlignment="Left" Margin="382,221,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <RadioButton Content="COLACION POR DOS HORAS" HorizontalAlignment="Left" Margin="382,242,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <Label Content="TIPO CONTRATO&#xD;&#xA;" HorizontalAlignment="Left" Margin="567,88,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <ComboBox HorizontalAlignment="Left" Margin="668,88,0,0" VerticalAlignment="Top" Width="99" Grid.Row="1"/>
+        <Button Content="AGREGAR" HorizontalAlignment="Left" Margin="297,292,0,0" VerticalAlignment="Top" Width="75" Grid.Row="1"/>
+        <Button Content="ELIMINAR" HorizontalAlignment="Left" Height="22" Margin="692,292,0,0" VerticalAlignment="Top" Width="75" Grid.Row="1"/>
+        <Button Content="MODIFICAR" HorizontalAlignment="Left" Height="22" Margin="593,292,0,0" VerticalAlignment="Top" Width="75" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="627,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26"/>
+        <Label Content="-" HorizontalAlignment="Left" Margin="605,40,0,0" VerticalAlignment="Top" Width="22"/>
+
+    </Grid>
+</Window>
