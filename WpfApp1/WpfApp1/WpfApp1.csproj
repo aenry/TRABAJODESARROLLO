@@ -124,5 +124,8 @@
   <ItemGroup>
     <Resource Include="RECURSOS\buscar-simbolo-circular.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="RECURSOS\Votación-portada.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

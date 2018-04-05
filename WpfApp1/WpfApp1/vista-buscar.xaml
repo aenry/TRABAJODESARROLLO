@@ -11,7 +11,11 @@
             <RowDefinition Height="27*"/>
             <RowDefinition Height="113*"/>
         </Grid.RowDefinitions>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="420" Stroke="Black" VerticalAlignment="Top" Width="264" Grid.RowSpan="2"/>
+        <Rectangle Height="420" Stroke="Black" VerticalAlignment="Top" Width="264" Grid.RowSpan="2" HorizontalAlignment="Left" Margin="0,0,24,0">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="RECURSOS/Votación-portada.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="264,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="528" Grid.RowSpan="2"/>
         <Label x:Name="l_rut" Content="RUT" HorizontalAlignment="Left" Margin="416,40,0,0" VerticalAlignment="Top" Width="59" Height="23"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="480,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
